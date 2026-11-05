@@ -1,0 +1,1 @@
+Implement LOW NORMAL HIGH priority throughout DeliveryDesk according to the capstone brief. First propose the contract, migration and test scenarios. Partition changes by owned paths. Preserve existing calls. Provide actual checks and limitations before handover.

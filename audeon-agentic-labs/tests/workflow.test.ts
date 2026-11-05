@@ -1,0 +1,11 @@
+import { test } from 'node:test';import assert from 'node:assert/strict';
+import { canTransition,toCents } from '../packages/domain/workflow.js';
+test('NEW must start before DONE',()=>assert.equal(canTransition('NEW','DONE'),false));
+test('DONE cannot reopen',()=>assert.equal(canTransition('DONE','NEW'),false));
+test('NEW to IN_PROGRESS is valid',()=>assert.equal(canTransition('NEW','IN_PROGRESS'),true));
+test('IN_PROGRESS to DONE is valid',()=>assert.equal(canTransition('IN_PROGRESS','DONE'),true));
+test('Same-state update is invalid',()=>assert.equal(canTransition('NEW','NEW'),false));
+test('Money rounds cents',()=>assert.equal(toCents(12.345),1235));
+test('Negative amount fails',()=>assert.throws(()=>toCents(-1),RangeError));
+test('NaN fails',()=>assert.throws(()=>toCents(NaN),RangeError));
+test('Infinity fails',()=>assert.throws(()=>toCents(Infinity),RangeError));

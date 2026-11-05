@@ -1,0 +1,1 @@
+Delegate read-only reviews of the current commit to api-reviewer, ui-reviewer and test-reviewer. Each must return a path, severity, evidence and proposed test. Consolidate duplicates and identify change dependencies. Do not edit files.

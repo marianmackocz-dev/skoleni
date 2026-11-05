@@ -1,0 +1,1 @@
+Proveď /release-check. U každé kontroly rozliš PASS, FAIL a SKIPPED. Žádný přeskočený test nevydávej za úspěšný. Neprováděj commit ani deployment.

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "newProjectRoot": "apps",
+  "projects": {
+    "deliverydesk": {
+      "projectType": "application",
+      "root": "apps/web",
+      "sourceRoot": "apps/web/src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "apps/web/src/main.ts",
+            "index": "apps/web/src/index.html",
+            "tsConfig": "apps/web/tsconfig.app.json",
+            "styles": [
+              "apps/web/src/styles.css"
+            ],
+            "outputPath": "dist/web"
+          }
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": {
+            "buildTarget": "deliverydesk:build",
+            "proxyConfig": "apps/web/proxy.json",
+            "port": 4200
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "dedb528a-aef9-481a-a419-5a3d7ce6019b"
+  }
+}

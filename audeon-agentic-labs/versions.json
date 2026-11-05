@@ -1,0 +1,13 @@
+{
+  "verifiedAt": "2026-10-29",
+  "node": "24.22.1",
+  "angular": "22.2.4",
+  "angularCli": "22.2.5",
+  "typescript": "6.0.3",
+  "mcpServer": "2.4.0",
+  "mcpClient": "2.4.0",
+  "postgres": "18.1",
+  "note": "npm packages are exact and package-lock.json freezes transitives. Container tags require pre-course pull and digest capture. Model size and licence require instructor selection.",
+  "ollamaImage": "ollama/ollama:latest",
+  "mcpProtocol": "2026-07-28 with explicit auto negotiation and legacy fallback"
+}

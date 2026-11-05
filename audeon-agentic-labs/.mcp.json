@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "deliverydesk": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "--import",
+        "tsx",
+        "mcp/server.ts"
+      ],
+      "env": {
+        "API_BASE_URL": "http://127.0.0.1:3000"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Repair the domain defects without changing existing tests, scripts or configuration. Allow at most three attempts. End each attempt with an external npm run verify. Return NO-GO with a reason for ambiguity or an unavailable dependency.

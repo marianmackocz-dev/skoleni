@@ -1,0 +1,1 @@
+Run /release-check. Mark each check PASS, FAIL or SKIPPED. Never report a skipped test as a pass. Do not commit or deploy.

@@ -1,0 +1,50 @@
+{
+  "name": "audeon-agentic-deliverydesk",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.15.0 <25"
+  },
+  "scripts": {
+    "dev:api": "node --import tsx --watch apps/api/main.ts",
+    "dev:web": "ng serve deliverydesk --host 127.0.0.1",
+    "build:web": "ng build deliverydesk",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:db": "node --import tsx --test integration/*.test.ts",
+    "test:e2e": "playwright test",
+    "verify": "npm run typecheck && npm test && npm run build:web",
+    "mcp": "node --import tsx mcp/server.ts",
+    "mcp:smoke": "node --import tsx mcp/smoke.ts",
+    "gateway": "node --import tsx local/gateway.ts",
+    "agent:local": "node --import tsx local/agent.ts",
+    "loop": "node scripts/repair-loop.mjs",
+    "lab": "node scripts/lab.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "db:migrate": "node --import tsx db/migrate.ts"
+  },
+  "dependencies": {
+    "@angular/common": "22.2.4",
+    "@angular/compiler": "22.2.4",
+    "@angular/core": "22.2.4",
+    "@angular/platform-browser": "22.2.4",
+    "rxjs": "7.8.2",
+    "express": "5.3.0",
+    "pg": "8.23.1",
+    "zod": "4.6.7",
+    "@modelcontextprotocol/server": "2.4.0",
+    "@modelcontextprotocol/client": "2.4.0"
+  },
+  "devDependencies": {
+    "@angular/build": "22.2.5",
+    "@angular/cli": "22.2.5",
+    "@angular/compiler-cli": "22.2.4",
+    "typescript": "6.0.3",
+    "tsx": "4.23.15",
+    "@types/node": "24.10.1",
+    "@types/express": "5.0.6",
+    "@types/pg": "8.23.1",
+    "@playwright/test": "1.64.1"
+  }
+}

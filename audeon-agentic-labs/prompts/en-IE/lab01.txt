@@ -1,0 +1,1 @@
+Repair only packages/domain/workflow.ts according to CLAUDE.md. Run npm test first and explain the failures. Preserve tests and contracts. Make a minimal change, run npm run verify and report exit codes and the diff.

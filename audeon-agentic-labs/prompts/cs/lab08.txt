@@ -1,0 +1,1 @@
+Implementuj prioritu LOW NORMAL HIGH napříč DeliveryDesk podle capstone zadání. Nejdřív navrhni kontrakt, migraci a testovací scénáře. Změny rozděl podle vlastněných cest. Zachovej stará volání. Před předáním dolož skutečné kontroly a omezení.

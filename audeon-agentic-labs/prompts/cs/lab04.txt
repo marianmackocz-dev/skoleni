@@ -1,0 +1,1 @@
+Proveď bezpečnostní review MCP, hooku a SQL transakce. U každé nalezené hranice uveď, co skutečně vynucuje a co jen doporučuje. Tajemství nečti. Dolož souběžný databázový test.

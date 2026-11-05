@@ -1,0 +1,13 @@
+[
+  "packages/domain/model.ts",
+  "apps/api/repository.ts",
+  "apps/api/app.ts",
+  "mcp/server.ts",
+  "apps/web/src/main.ts",
+  "db/002_priority.sql",
+  "db/migrate.ts",
+  "tests/generated-priority.test.ts",
+  "integration/priority.test.ts",
+  "tests/generated-priority-api.test.ts",
+  "e2e/priority.spec.ts"
+]

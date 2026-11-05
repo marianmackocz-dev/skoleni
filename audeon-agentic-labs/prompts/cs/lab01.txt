@@ -1,0 +1,1 @@
+Oprav pouze packages/domain/workflow.ts podle CLAUDE.md. Nejdřív spusť npm test a vysvětli chyby. Zachovej testy a kontrakty. Navrhni minimální změnu, spusť npm run verify a dolož exit codes a diff.

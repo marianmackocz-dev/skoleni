@@ -1,0 +1,1 @@
+Oprav doménové chyby bez změny existujících testů, skriptů nebo konfigurace. Nejvýše tři pokusy. Každý pokus skončí externím npm run verify. Při nejasnosti nebo nedostupné závislosti vrať NO-GO s důvodem.

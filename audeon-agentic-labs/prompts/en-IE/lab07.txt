@@ -1,0 +1,1 @@
+Fetch ticket 1 through a tool. Report its actual status and next legal transition. If data is unavailable, state which check could not be completed.

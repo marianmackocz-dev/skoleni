@@ -1,0 +1,1 @@
+Načti tiket 1 prostřednictvím nástroje. Uveď skutečný stav a následující legální přechod. Při nedostupnosti dat řekni, kterou kontrolu nebylo možné provést.

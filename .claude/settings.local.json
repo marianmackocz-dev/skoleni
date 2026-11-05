@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "deliverydesk"
+  ],
+  "enableAllProjectMcpServers": true
+}

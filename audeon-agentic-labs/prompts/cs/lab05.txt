@@ -1,0 +1,1 @@
+Deleguj read-only review současného commitu agentům api-reviewer, ui-reviewer a test-reviewer. Každý vrátí cestu, závažnost, důkaz a navržený test. Pak sjednoť duplicity a navrhni závislosti změn. Soubory neměň.

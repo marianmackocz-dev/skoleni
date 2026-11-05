@@ -1,0 +1,1 @@
+Review MCP, the hook and SQL transaction security. For each boundary state what it enforces and what it merely recommends. Do not read secrets. Provide concurrent database test evidence.
