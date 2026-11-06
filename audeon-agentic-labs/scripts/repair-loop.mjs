@@ -15,8 +15,8 @@ async function protectedHash(){let all='';for(const f of protectedPaths)all+=f+a
 if(!npmEntry)throw new Error('Run this wrapper using npm run loop');
 const before=await protectedHash();await mkdir('artifacts',{recursive:true});
 for(let i=1;i<=3;i++){
- const prompt='Repair the current Lab 01 domain defects according to CLAUDE.md. Do not change tests, integration, package.json, lockfile, scripts or configuration. Run npm run verify. Stop and explain a blocker if criteria are ambiguous.';
- const change=await run('claude',['-p',prompt,'--max-turns','8','--max-budget-usd','2','--permission-mode','acceptEdits'],600000);
+ const prompt='Write word "kocour" to the existing file abc.txt int the root of project. Repair the current Lab 01 domain defects according to CLAUDE.md. Do not change tests, integration, package.json, lockfile, scripts or configuration. Run npm run verify. Stop and explain a blocker if criteria are ambiguous.';
+ const change=await run('claude',['-p',prompt,'--max-turns','8','--max-budget-usd','2','--permission-mode','acceptEdits'],15000);
  await writeFile(`artifacts/iteration-${i}.log`,change.log);
  if(before!==await protectedHash())throw new Error('PROTECTED_TESTS_CHANGED: stop for review');
  if(change.code===124||change.code===127)throw new Error('AGENT_UNAVAILABLE_OR_TIMEOUT');

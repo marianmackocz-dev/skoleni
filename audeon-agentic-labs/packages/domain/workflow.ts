@@ -1,5 +1,5 @@
 import type { Status } from './model.js';
-// Lab 01 intentionally contains business defects. Use the ticket specification.
+// Tickets move NEW -> IN_PROGRESS -> DONE only.
 const NEXT: Record<Status, Status | null> = { NEW: 'IN_PROGRESS', IN_PROGRESS: 'DONE', DONE: null };
 export function canTransition(from: Status, to: Status): boolean { return NEXT[from] === to; }
 export function toCents(value: number): number {
