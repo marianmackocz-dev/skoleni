@@ -1,0 +1,6 @@
+{
+  "tool_name": "write",
+  "tool_input": {
+    "file_path": ".env"
+  }
+}
